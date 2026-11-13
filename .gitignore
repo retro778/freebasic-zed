@@ -1,0 +1,3 @@
+# Zed writes grammar build artifacts into the dev extension folder
+grammars/
+*.wasm

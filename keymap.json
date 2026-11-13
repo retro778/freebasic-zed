@@ -1,0 +1,37 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "f5": [
+        "task::Spawn",
+        {
+          "task_name": "FB: Build (console) + Run in Xfce Terminal"
+        }
+      ],
+      "shift-f5": [
+        "task::Spawn",
+        {
+          "task_name": "FB: Build (GUI) + Run in Xfce Terminal"
+        }
+      ],
+      "f7": [
+        "task::Spawn",
+        {
+          "task_name": "FB: Build (console)"
+        }
+      ],
+      "shift-f7": [
+        "task::Spawn",
+        {
+          "task_name": "FB: Build (GUI)"
+        }
+      ],
+      "f8": [
+        "task::Spawn",
+        {
+          "task_name": "FB: Run in Xfce Terminal"
+        }
+      ]
+    }
+  }
+]

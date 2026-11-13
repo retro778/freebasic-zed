@@ -1,0 +1,10 @@
+id = "freebasic"
+name = "FreeBASIC"
+version = "0.1.0"
+schema_version = 1
+authors = ["Ronen Blumberg"]
+description = "FreeBASIC language support for Zed: syntax highlighting, .bas/.bi detection, comments, and outline."
+
+[grammars.freebasic]
+repository = "https://github.com/Tefached95/tree-sitter-freebasic-zed"
+commit = "cd1f284616bafe32efa14602548a6261310d19e2"

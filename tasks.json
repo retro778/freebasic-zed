@@ -1,0 +1,37 @@
+[
+  {
+    "label": "FB: Build (console)",
+    "command": "fbc -s console -exx -w all \"$ZED_FILE\"",
+    "cwd": "$ZED_DIRNAME",
+    "reveal": "always",
+    "allow_concurrent_runs": false
+  },
+  {
+    "label": "FB: Build (GUI)",
+    "command": "fbc -s gui -exx -w all \"$ZED_FILE\"",
+    "cwd": "$ZED_DIRNAME",
+    "reveal": "always",
+    "allow_concurrent_runs": false
+  },
+  {
+    "label": "FB: Run in Xfce Terminal",
+    "command": "xfce4-terminal --working-directory=\"$ZED_DIRNAME\" --title=\"FreeBASIC\" -x bash -c 'cd \"'\"$ZED_DIRNAME\"'\" && \"./'\"$ZED_STEM\"'\"; ec=$?; echo; echo \"--- program exited with code $ec ---\"; read -n 1 -s -r -p \"Press any key to close...\"'",
+    "cwd": "$ZED_DIRNAME",
+    "reveal": "never",
+    "hide": "always"
+  },
+  {
+    "label": "FB: Build (console) + Run in Xfce Terminal",
+    "command": "fbc -s console -exx -w all \"$ZED_FILE\" && xfce4-terminal --working-directory=\"$ZED_DIRNAME\" --title=\"FreeBASIC\" -x bash -c 'cd \"'\"$ZED_DIRNAME\"'\" && \"./'\"$ZED_STEM\"'\"; ec=$?; echo; echo \"--- program exited with code $ec ---\"; read -n 1 -s -r -p \"Press any key to close...\"'",
+    "cwd": "$ZED_DIRNAME",
+    "reveal": "always",
+    "allow_concurrent_runs": false
+  },
+  {
+    "label": "FB: Build (GUI) + Run in Xfce Terminal",
+    "command": "fbc -s gui -exx -w all \"$ZED_FILE\" && xfce4-terminal --working-directory=\"$ZED_DIRNAME\" --title=\"FreeBASIC\" -x bash -c 'cd \"'\"$ZED_DIRNAME\"'\" && \"./'\"$ZED_STEM\"'\"; ec=$?; echo; echo \"--- program exited with code $ec ---\"; read -n 1 -s -r -p \"Press any key to close...\"'",
+    "cwd": "$ZED_DIRNAME",
+    "reveal": "always",
+    "allow_concurrent_runs": false
+  }
+]
